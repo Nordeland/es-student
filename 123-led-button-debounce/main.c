@@ -12,7 +12,6 @@ bool get_button_debounce(uint pin)
     return state && gpio_get(pin);
 }
 
-
 int main()
 {
     gpio_init(LED_PIN);
@@ -24,11 +23,10 @@ int main()
 
     bool led = false;
     bool previous = false;
-    
-   
+
     while (1)
     {
-        bool current = gpio_get(BUTTON_PIN);
+        bool current = get_button_debounce(BUTTON_PIN);
 
         if (previous == true && current == false)
         {
@@ -38,5 +36,4 @@ int main()
 
         previous = current;
     }
-
 }
