@@ -15,3 +15,4 @@
 
 ![](https://github.com/Nordeland/es-student/actions/workflows/check-1-2-2.yml/badge.svg)
 
+![](https://github.com/Nordeland/es-student/actions/workflows/check-1-2-3.yml/badge.svg)
