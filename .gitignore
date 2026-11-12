@@ -1,7 +1,3 @@
 build/
 .vscode/
 .DS_Store
-*.uf2
-*.log
-*.elf
-*.bin
