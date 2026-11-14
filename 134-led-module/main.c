@@ -2,6 +2,7 @@
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 #include "led.h"
+#include "log.h"
 
 
 const uint BUTTON_PIN = 15;
@@ -20,16 +21,20 @@ void handle_command(int command)
     if (command == 'e')
     {
         led_set(true);
-        printf("led %s\n", led_is_on() ? "on" : "off");
+        LOG_INF("led %s\n", led_is_on() ? "on" : "off");
     }
     else if (command == 'd')
     {
         led_set(false);
-        printf("led %s\n", led_is_on() ? "on" : "off");
+        LOG_INF("led %s\n", led_is_on() ? "on" : "off");
+    }
+        else if (command == 'v') // <--- ДОБАВЛЕНО: новая команда для вывода версии
+    {
+        log_version();
     }
     else
     {
-        printf("unknown command: %c\n", command);
+        LOG_ERR("unknown command: %c\n", command);
     }
 
     
@@ -44,7 +49,7 @@ int main()
     gpio_set_dir(BUTTON_PIN, GPIO_IN);
     gpio_pull_up(BUTTON_PIN);
 
-    bool led = false;
+   
     bool previous = true;
 
     while (1)
@@ -54,7 +59,7 @@ int main()
         if (previous == true && current == false)
         {
             led_toggle();
-            printf("led %s\n", led_is_on() ? "on" : "off");
+            LOG_INF("led %s\n", led_is_on() ? "on" : "off");
         }
 
         previous = current;
@@ -65,6 +70,7 @@ int main()
             continue;
         }
 
+        LOG_DBG("got %c\n", command);
         handle_command(command);
     }
     
