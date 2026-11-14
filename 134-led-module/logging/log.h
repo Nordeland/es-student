@@ -26,7 +26,7 @@ void log_prefix(const char *level, const char *function, int line);
         }                                           \
     } while (0)
 
-    #define LOG_ERR(...)                                \
+#define LOG_ERR(...)                                \
     do                                              \
     {                                               \
         if (LOG_LEVEL >= LOG_LEVEL_ERR)             \
@@ -36,7 +36,7 @@ void log_prefix(const char *level, const char *function, int line);
         }                                           \
     } while (0)
 
-    #define LOG_DBG(...)                                \
+#define LOG_DBG(...)                                \
     do                                              \
     {                                               \
         if (LOG_LEVEL >= LOG_LEVEL_DBG)             \
@@ -45,3 +45,4 @@ void log_prefix(const char *level, const char *function, int line);
             printf(__VA_ARGS__);                    \
         }                                           \
     } while (0)
+    
