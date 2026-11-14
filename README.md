@@ -22,3 +22,7 @@
 ![](https://github.com/Nordeland/es-student/actions/workflows/check-1-3-2.yml/badge.svg)
 
 ![](https://github.com/Nordeland/es-student/actions/workflows/check-1-3-3.yml/badge.svg)
+
+![](https://github.com/Nordeland/es-student/actions/workflows/check-1-3-4.yml/badge.svg)
+
+![](https://github.com/Nordeland/es-student/actions/workflows/check-1-3-5.yml/badge.svg)
