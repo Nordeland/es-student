@@ -12,9 +12,9 @@
 
 struct info_t
 {
-    uint8_t revision;
-    char name[13];
     uint32_t version;
+    char name[13];
+    uint8_t revision;
 };
 
 extern struct info_t device_card;
