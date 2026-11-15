@@ -3,26 +3,26 @@
 устройство: 2e8a:000a
 серийный номер: E66540F0A36E1D21
 порт: COM9
-начало: 2026-11-15T13:32:44
+начало: 2026-11-15T13:40:50
    0.000 --> enable
-   0.125 <-- enable
-   0.125 <-- dbg read_line:70 got enable
-   0.125 <-- inf handle_command:31 led on
-   2.157 --> disable
-   2.313 <-- disable
-   2.313 <-- dbg read_line:70 got disable
-   2.313 <-- inf handle_command:36 led off
-   4.344 --> info
-   4.438 <-- info
-   4.438 <-- dbg read_line:70 got info
-   4.438 <-- project: 211-command-usb
-   4.438 <-- repo: https://github.com/Nordeland/es-student
-   4.438 <-- board: pico
-   4.438 <-- serial: E66540F0A36E1D21
-   4.438 <-- chip: manufacturer 0x927, part 0x0002, revision 2
-   4.438 <-- sdk: 2.3.0
-   6.469 --> nosuchcommand
-   6.750 <-- nosuchcommand
-   6.750 <-- dbg read_line:70 got nosuchcommand
-   6.750 <-- err handle_command:48 unknown command: nosuchcommand
+   0.109 <-- enable
+   0.109 <-- dbg read_line:70 got enable
+   0.109 <-- inf handle_command:31 led on
+   2.140 --> disable
+   2.296 <-- disable
+   2.296 <-- dbg read_line:70 got disable
+   2.296 <-- inf handle_command:36 led off
+   4.312 --> info
+   4.390 <-- info
+   4.390 <-- dbg read_line:70 got info
+   4.390 <-- project: 211-command-usb
+   4.390 <-- repo: https://github.com/Nordeland/es-student
+   4.390 <-- board: pico
+   4.390 <-- serial: E66540F0A36E1D21
+   4.390 <-- chip: manufacturer 0x927, part 0x0002, revision 2
+   4.390 <-- pico-sdk: 2.3.0
+   6.421 --> nosuchcommand
+   6.703 <-- nosuchcommand
+   6.703 <-- dbg read_line:70 got nosuchcommand
+   6.703 <-- err handle_command:48 unknown command: nosuchcommand
 итог: отправлено команд 4, принято строк 17
